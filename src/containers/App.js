@@ -40,6 +40,10 @@ const App = () => {
   const handlePageNumber = (event, newPage) => {
     setPageNumber(newPage)
   }
+ 
+const handlePageChange=index=>{
+  setPageNumber(index);
+}
 
   return (
     <MainContext.Provider value={{
@@ -57,7 +61,7 @@ const App = () => {
         <PagesContainer>
           <SwipeableViews
             index={pageNumber}
-            onChangeIndex={handlePageNumber}
+            onChangeIndex={handlePageChange}
           >
             <Page pageNumber={pageNumber} index={0}>
               <Home helmetTitle="وبسایت شخصی آرمان مختاری" />

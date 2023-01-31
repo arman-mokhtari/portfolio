@@ -68,7 +68,7 @@ const ContactForm = () => {
                                     value={formik.values?.fullname}
                                     onChange={formik.handleChange}
                                     inputProps={{
-                                        endAdornment: (
+                                        endadornment: (
                                             <InputAdornment position="end">
                                                 <Face6Rounded />
                                             </InputAdornment>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                                     value={formik.values?.email}
                                     onChange={formik.handleChange}
                                     inputProps={{
-                                        endAdornment: (
+                                        endadornment: (
                                             <InputAdornment position="end">
                                                 <EmailRounded />
                                             </InputAdornment>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                                     value={formik.values?.subject}
                                     onChange={formik.handleChange}
                                     inputProps={{
-                                        endAdornment: (
+                                        endadornment: (
                                             <InputAdornment position="end">
                                                 <SubjectRounded />
                                             </InputAdornment>

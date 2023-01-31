@@ -14,7 +14,7 @@ import { WorkHistoryRounded } from "@mui/icons-material";
 import { devExp } from "../../constants/detail";
 
 
-const DevExpTimeline = ({loading}) => {
+const DevExpTimeline = ({ loading }) => {
 
   return (
     <Timeline position="right" sx={{
@@ -23,13 +23,14 @@ const DevExpTimeline = ({loading}) => {
       {
         devExp.map((item, index) => (
           <Slide
+            key={index}
             direction="up"
             in={loading}
             style={{
               transitionDelay: loading ? `${index + 3}99ms` : "0ms",
             }}
           >
-            <TimelineItem key={index}>
+            <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot color="warning" variant="outlined">
                   <WorkHistoryRounded color="warning" />
